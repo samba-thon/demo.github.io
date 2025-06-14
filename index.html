@@ -2,108 +2,121 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Ermjay's Homepage</title>
+  <title>Ermjay's Personal Homepage</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: rgb(245, 245, 250);
-      color: rgb(30, 30, 30);
-      margin: 0;
+      background-color: rgb(240, 248, 255);
+      color: rgb(33, 37, 41);
       line-height: 1.6;
+      margin: 0;
     }
 
     .c-site-header {
-      background-color: rgb(0, 100, 200);
-      color: white;
+      background-color: rgb(30, 30, 80);
+      color: rgb(255, 255, 255);
       padding: 20px;
       text-align: center;
     }
 
-    nav {
-      background-color: rgb(230, 240, 255);
+    nav[aria-label="Main Site Links"] {
+      background-color: rgb(230, 230, 255);
       padding: 10px;
       text-align: center;
     }
 
     nav a {
       margin: 0 15px;
+      color: rgb(0, 0, 128);
       text-decoration: none;
-      color: rgb(20, 60, 120);
       font-weight: bold;
     }
 
     main {
       padding: 30px;
-      max-width: 800px;
-      margin: auto;
+      background-color: rgb(255, 255, 255);
     }
 
-    img {
-      max-width: 100%;
-      border-radius: 10px;
-      margin: 20px 0;
+    .profile-img {
+      float: right;
+      width: 250px;
+      margin-left: 20px;
+      border: 3px solid rgb(180, 180, 255);
     }
 
     iframe {
-      width: 100%;
+      display: block;
+      margin: 30px auto;
+      width: 560px;
       height: 315px;
-      margin: 20px 0;
       border: none;
     }
 
-    .c-site-footer {
-      background-color: rgb(40, 40, 50);
-      color: rgb(230, 230, 230);
+    .footer {
+      background-color: rgb(50, 50, 70);
+      color: rgb(240, 240, 240);
       text-align: center;
       padding: 20px;
-      margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
+  <!-- Header -->
   <header class="c-site-header">
-    <h1>Welcome to Ermjay's Homepage</h1>
-    <p>Aspiring Web Developer | Lifelong Learner</p>
+    <h1>Ermjay — Aspiring Web Developer</h1>
+    <p>Lifelong learner building the future, one line of code at a time.</p>
   </header>
 
+  <!-- Navigation -->
   <nav aria-label="Main Site Links">
     <a href="#about">About Me</a>
-    <a href="#projects">Projects</a>
-    <a href="#learning">Learning Journey</a>
+    <a href="#video">Inspiration</a>
     <a href="#contact">Contact</a>
   </nav>
 
+  <!-- Main Content -->
   <main>
     <section id="about">
+      <img 
+        class="profile-img" 
+        src="https://cdn.pixabay.com/photo/2022/10/05/05/19/ai-generated-7501352_960_720.png" 
+        alt="Cartoon of a black man coding" 
+      />
       <h2>About Me</h2>
-      <p>Hello! My name is Ermjay. I'm an aspiring web developer currently learning on the <strong>Code Your Future</strong> platform. I'm passionate about using technology to solve real-world problems. With a background in communication and a deep curiosity for how the web works, I’m excited about my journey into development.</p>
-
-      <p>I believe that learning never stops. Every day presents a new opportunity to grow, experiment, and improve. Outside of coding, I enjoy reading, watching documentaries, and spending time with my family. This personal homepage is a reflection of my growth as I learn HTML, CSS, and JavaScript.</p>
-
-      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Coding workspace" />
+      <p>
+        Hi, I'm Ermjay! I'm currently learning web development through the Code Your Future platform, a brilliant place for self-driven and community-based learning. I’m passionate about creating intuitive digital experiences and excited to grow as a developer.
+      </p>
+      <p>
+        I have always been curious about technology and problem-solving. Becoming a developer is not just a goal—it's part of a bigger journey to transform how I work and live. With each project, I’m building confidence, resilience, and skills that will shape my future career.
+      </p>
+      <p>
+        I’m particularly interested in front-end development and accessibility. I believe everyone deserves to experience the web equally, and that drives my motivation to build inclusive, responsive, and human-centered interfaces.
+      </p>
     </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <p>I’ve worked on several beginner projects, including a to-do app, a weather app, and small static sites like this one. As I grow in my skills, I aim to contribute to open-source projects and collaborate with other learners.</p>
+    <!-- Video -->
+    <section id="video">
+      <h2>You Can Learn Anything 🎓</h2>
+      <p>
+        Learning to code hasn’t always been easy, but it’s been one of the most rewarding experiences of my life. Here's a video that keeps me inspired:
+      </p>
+      <iframe 
+        src="https://www.youtube.com/embed/JE1zZcTkjZg" 
+        title="You Can Learn Anything - Khan Academy">
+      </iframe>
     </section>
 
-    <section id="learning">
-      <h2>Learning Journey</h2>
-      <p>One of my favorite parts of this journey has been understanding how the pieces of the web fit together. From writing simple HTML tags to styling with CSS and now dabbling in JavaScript, it’s been a challenge and a thrill.</p>
-      
-      <iframe src="https://www.youtube.com/embed/3JluqTojuME" title="Motivational video"></iframe>
-    </section>
-
+    <!-- Contact -->
     <section id="contact">
-      <h2>Contact</h2>
-      <p>If you'd like to connect or learn together, feel free to reach out via my GitHub or LinkedIn. I'm always open to collaborating and sharing knowledge with fellow developers.</p>
+      <h2>Contact Me</h2>
+      <p>You can reach me at <strong>taj.gmail.com</strong>. I’d love to hear from fellow learners, mentors, and tech professionals.</p>
     </section>
   </main>
 
-  <footer class="c-site-footer">
-    <p>© 2025 Ermjay | Learning through Code Your Future</p>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Ermjay.</p>
   </footer>
 
 </body>
